@@ -401,7 +401,7 @@ def init_widgets_list():
         # Left Side of the bar
         space,
         widget.Image(
-            filename="/home/michael/.config/qtile/4375122_logo_ubuntu_icon.png",
+            filename="/home/michael/.config/qtile/arch_18x18.png",
             background=backgroundColor,
             margin=3,
             mouse_callbacks={
@@ -429,6 +429,10 @@ def init_widgets_list():
         widget.Spacer(length=bar.STRETCH, background=backgroundColor, **powerline),
         # widget.Spacer(length=bar.STRETCH, background=colors[1]),
         widget.TextBox(fmt="", background=backgroundColor, **powerline),
+        widget.Battery(
+            background = colors[8],
+            **powerline
+        ),
         widget.CheckUpdates(
             update_interval=1800,
             distro="Arch_checkupdates",
