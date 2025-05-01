@@ -1,0 +1,5 @@
+#!/bin/env bash
+set -e
+
+printf "$(pacman -Q | wc -l)"
+# printf "$(apt list --installed | wc -l)"
